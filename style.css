@@ -1,0 +1,249 @@
+:root{
+  --primary-color:rgba(255, 255, 255, 0.5);
+  --secondary-color:rgba(230, 83, 60, 1);
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+/* shared */
+.bg-color{
+  background-color: rgba(17, 17, 17, 1);
+}
+.display-flex{
+  display: flex;
+}
+.primary-btn{
+  color: white;
+  background-color: var(--secondary-color);
+  padding: 16px 40px;
+  border-radius: 42px;
+  border: none;
+}
+/*  */
+header{
+  width: 1060px;
+  margin: 0 auto;
+}
+.brand-details{
+   justify-content: space-between;
+   align-items: center;
+}
+.brand{
+  color: var(--secondary-color);
+  font-size: 36px;
+  font-weight: 800;
+}
+.nav-item{
+  list-style: none;
+}
+.nav-item a{
+  text-decoration: none;
+  color: white;
+}
+.nav-link{
+  gap: 47px;
+}
+#nav-items{
+  background-color: var(--secondary-color);
+  padding:8px 20px;
+  border-radius: 46px;
+}
+.grtbody-details{
+  width: 520px;
+}
+.getbody-title{
+  font-size: 78px;
+  font-weight: 900;
+  color: white;
+}
+.getbody-description{
+  color: var(--primary-color);
+}
+.btn{
+  color: white;
+  background-color: rgba(17, 17, 17, 1);
+  padding: 16px 40px;
+  border-radius: 42px;
+}
+.button{
+  gap: 10px;
+}
+.getbody{
+  gap: 80px;
+}
+.card-img{
+  width: 193px;
+  height: 98px;
+  border-radius:12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  text-align: center;
+  
+}
+.number{
+  font-size: 25px;
+  font-weight: 900;
+}
+.card-sid{
+  position: relative;
+  left: 256px;
+  top: 142px;
+}
+h6{
+  color: var(--primary-color);
+}
+.card-sid2{
+  position: relative;
+bottom: 200px;
+right: 80px;
+}
+.habits-sec{
+  width: 1044px;
+  height: 452px;
+  margin: 0 auto;
+}
+.habits-head{
+  text-align: center;
+
+}
+.habits-title{
+  font-size: 48px;
+  font-weight: 900;
+  color: white;
+}
+.habits{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+.habits-description{
+  color: var(--primary-color);
+}
+.habits-img{
+  width: 180px;
+  height: 180px;
+  border-radius: 100px;
+  border: 4px solid rgba(255, 255, 255, 0.1);
+}
+.habits-card{
+  text-align: center;
+}
+.h5{
+  color: white;
+}
+.card-description{
+  color: var(--primary-color);
+}
+.run-sec{
+  width: 1060px;
+  height: 371px;
+  margin: 0 auto;
+  background-color: rgba(34, 34, 34, 1);
+  border-radius: 18px;
+  margin-top: 50px;
+}
+.run-img{
+  width: 366px;
+  height: 312px;
+  border-radius: 18px;
+}
+.run-details{
+  width: 443px;
+  height: 290px;
+}
+.run-content{
+  justify-content: center;
+  gap: 165px;
+  position: relative;
+  top: 30px;
+}
+.run-titel{
+  font-size: 48px;
+  font-weight: 900;
+  color: white;
+}
+.run-description{
+  color: var(--primary-color);
+}
+.team-sec{
+  width: 1060px;
+  height: 782px;
+  margin: 0 auto;
+  
+}
+.team-link{
+  gap: 14px;
+  text-align: center;
+}
+.team-title{
+  font-size: 48px;
+  font-weight: 900;
+  color: white;
+}
+.team-description{
+  color: var(--primary-color);
+}
+.tainer-img{
+  width: 326px;
+  height: 272px;
+}
+.tainer{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+
+}
+footer{
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.fetness{
+  width: 1059px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  gap: 102px;
+}
+.fetness-decription{
+  color: var(--primary-color);
+}
+.list-title{
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+}
+.list{
+  list-style: none;
+  color: var(--primary-color);
+}
+.copy{
+  border-top:2px solid var(--primary-color) ;
+  width: 1059px;
+  margin: 0 auto;
+}
+.copy-description{
+  text-align: center;
+  padding: 20px;
+  color: var(--primary-color);
+}
+@media screen and (max-width: 576px) {
+  .navbar{
+    display: none;
+  }
+  .getbody, .run-content{
+    flex-direction: column;
+    align-items: center;
+  }
+  .habits, .tainer{
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+  
+}
